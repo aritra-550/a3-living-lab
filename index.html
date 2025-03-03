@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
 <!-- daisyui cdn -->
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- tailwind script -->
 <script>
     tailwind.config = {
       theme: {
@@ -22,16 +23,55 @@
       }
     }
   </script>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <style>
+    
     .font-adlam-display{
         font-family: "ADLaM Display", serif;
     }
   </style>
 </head>
-<body class="font-adlam-display">
-    <header>
-
-    </header>
+<body class="font-adlam-display mx-auto">
+ <header class="md:container mx-auto px-3">
+  <div class="navbar bg-[#FFF9F4] shadow-sm flex">
+    <div class="navbar-start gap-3">
+      <img src="./c1-assets/logo-header.png" alt="">
+      <a class="text-xl ">Browse<span class="text-[#FFDC26]">4</span>pets</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a>Find a pet</a></li>
+        <li><a>Breeds</a></li>
+        <li><a>Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <i class="fa-solid fa-bars text-right"></i>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg> -->
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a>Find a pet</a></li>
+        <li><a>Breeds</a></li>
+        <li><a>Contact Us</a></li>
+        <a class="btn border border-[#FFDC26]">Login</a>
+      <a class="btn bg-[#FFDC26]">Register</a>
+      </ul>
+      
+    </div>
+    <div class="navbar-end gap-3">
+      <i class="fa-regular fa-bell fa-bounce"></i>
+       <img class="h-4" src="./c1-assets/search (2) 1.png" alt="">
+      <a class="btn border border-[#FFDC26] font-normal">Login</a>
+      <a class="btn bg-[#FFDC26] font-normal">Register</a>
+    </div>
+    
+  </div>
+ </header>
     <main>
 
     </main>
